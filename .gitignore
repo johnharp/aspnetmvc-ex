@@ -3,3 +3,6 @@
 ################################################################################
 
 /ASPNETMVC-ex/.vs/ASPNETMVC-ex
+/ASPNETMVC-ex/ASPNETMVC-ex/bin
+/ASPNETMVC-ex/ASPNETMVC-ex/obj/Debug
+/ASPNETMVC-ex/packages
