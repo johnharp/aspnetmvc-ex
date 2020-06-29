@@ -22,3 +22,39 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+.exButton {
+    box-shadow: inset 0px 1px 0px 0px #a0a0a0;
+    background-color: #959595;
+    border-radius: 2px;
+    border: 1px solid #555555;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
+/* Button Styles */
+.button {
+    background-color: #eeeeee;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.button1 {background-color: #4CAF50; color: white; } /* Green */
+.button2 {background-color: #008CBA; color: white; } /* Blue */
+.button3 {background-color: #f44336; color: white; } /* Red */
+.button4 {background-color: #555555; color: white;} /* Black */
+
+
