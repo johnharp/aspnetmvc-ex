@@ -10,7 +10,7 @@
 
 <div class="p-4">
 
-<a href="@Url.Action("Action1")"
+<a href='@Url.Action("Action1")'
    class="buttonex buttonex-1">
     <div class="text-left">
         <i class="mdi mdi-comment-text"></i>
@@ -19,7 +19,7 @@
     </div>
 </a>
 
-<a href="@Url.Action("Action2")"
+<a href='@Url.Action("Action2")'
    class="buttonex buttonex-2">
     <div class="text-left">
         <i class="mdi mdi-email-plus-outline"></i>
@@ -29,7 +29,7 @@
 </a>
 
 
-<a href="@Url.Action("Action3")"
+<a href='@Url.Action("Action3")'
    class="buttonex buttonex-3">
     <div class="text-left">
         <i class="mdi mdi-hexagon-slice-4"></i>
@@ -60,7 +60,7 @@
     string buttonCssClass, string iconCssClass,
     string action)
 {
-    <a href="@Url.Action(action)"
+    <a href='@Url.Action(action)'
        class="buttonex @buttonCssClass">
         <div class="text-left">
             <i class="mdi @iconCssClass"></i>

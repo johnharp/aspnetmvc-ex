@@ -12,5 +12,10 @@ namespace ASPNETMVC_ex.Controllers
         {
             return View();
         }
+
+        public ActionResult HelperInAppCode()
+        {
+            return View();
+        }
     }
 }

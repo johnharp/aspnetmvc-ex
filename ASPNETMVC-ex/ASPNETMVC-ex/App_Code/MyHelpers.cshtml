@@ -1,0 +1,17 @@
+﻿@using System.Web.Mvc
+
+@helper ActionButton(
+    string title, string description,
+    string buttonCssClass, string iconCssClass,
+    string action,
+    UrlHelper Url)
+{
+    <a href='@Url.Action(action)'
+       class="buttonex @buttonCssClass">
+        <div class="text-left">
+            <i class="mdi @iconCssClass"></i>
+            <b>@title</b>
+            <p class="mb-0">@description</p>
+        </div>
+    </a>
+}
