@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Dry UI";
+}
+
+@section head {
+    <link href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css"
+          rel="stylesheet" type="text/css" media="all">
+}
+
+
+<div class="p-4">
+
+<a href="@Url.Action("Action1")"
+   class="buttonex buttonex-1">
+    <div class="text-left">
+        <i class="mdi mdi-comment-text"></i>
+        <b>Button 1</b>
+        <p class="mb-0">Description of first button</p>
+    </div>
+</a>
+
+<a href="@Url.Action("Action2")"
+   class="buttonex buttonex-2">
+    <div class="text-left">
+        <i class="mdi mdi-email-plus-outline"></i>
+        <b>Button 2</b>
+        <p class="mb-0">Description of second button</p>
+    </div>
+</a>
+
+
+<a href="@Url.Action("Action3")"
+   class="buttonex buttonex-3">
+    <div class="text-left">
+        <i class="mdi mdi-hexagon-slice-4"></i>
+        <b>Button 3</b>
+        <p class="mb-0">Description of third button</p>
+    </div>
+</a>
+
+</div>
+
+
+<div class="p-4">
+
+    @ActionButton("Button 1", "Description of first button", "buttonex-1", "mdi-comment-text", "Action1")
+    @ActionButton("Button 2", "Description of second button", "buttonex-2", "mdi-email-plus-outline", "Action2")
+    @ActionButton("Button 3", "Description of third button", "buttonex-3", "mdi-hexagon-slice-4", "Action3")
+
+</div>
+
+
+<p class="text-muted mt-3">
+    Icons are from <a href="http://materialdesignicons.com/">Material Design Icons</a>.
+</p>
+
+
+@helper ActionButton(
+    string title, string description,
+    string buttonCssClass, string iconCssClass,
+    string action)
+{
+    <a href="@Url.Action(action)"
+       class="buttonex @buttonCssClass">
+        <div class="text-left">
+            <i class="mdi @iconCssClass"></i>
+            <b>@title</b>
+            <p class="mb-0">@description</p>
+        </div>
+    </a>
+}

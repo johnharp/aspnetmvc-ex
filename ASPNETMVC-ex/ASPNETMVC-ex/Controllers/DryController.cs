@@ -8,7 +8,7 @@ namespace ASPNETMVC_ex.Controllers
 {
     public class DryController : Controller
     {
-        public ActionResult Index()
+        public ActionResult HelperInPage()
         {
             return View();
         }
