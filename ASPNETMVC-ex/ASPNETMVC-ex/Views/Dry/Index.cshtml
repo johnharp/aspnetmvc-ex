@@ -2,9 +2,41 @@
     ViewBag.Title = "Dry UI";
 }
 
+@section head {
+    <link href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css"
+          rel="stylesheet" type="text/css" media="all">
+}
 
-<a href="#" class="button">Action 1</a>
-<a href="#" class="button">Action 2</a>
-<a href="#" class="button button3">Action 3</a>
 
-<a href="#" class="button button4">Default Action</a>
+<a href="@Url.Action("Action1", "Controller1")"
+   class="buttonex buttonex-1">
+    <div class="text-left">
+        <i class="mdi mdi-comment-text"></i>
+        <b>Button 1</b>
+        <p class="mb-0">Description of first button</p>
+    </div>
+</a>
+
+<a href="@Url.Action("Action2", "Controller2")"
+   class="buttonex buttonex-2">
+    <div class="text-left">
+        <i class="mdi mdi-email-plus-outline"></i>
+        <b>Button 2</b>
+        <p class="mb-0">Description of second button</p>
+    </div>
+</a>
+
+
+<a href="@Url.Action("Action3", "Controller3")"
+   class="buttonex buttonex-3">
+    <div class="text-left">
+        <i class="mdi mdi-hexagon-slice-4"></i>
+        <b>Button 3</b>
+        <p class="mb-0">Descirption of third button</p>
+    </div>
+</a>
+
+
+<p class="text-muted mt-3">
+    Icons are from <a href="http://materialdesignicons.com/">Material Design Icons</a>.
+</p>
