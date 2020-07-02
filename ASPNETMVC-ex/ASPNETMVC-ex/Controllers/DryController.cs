@@ -17,5 +17,15 @@ namespace ASPNETMVC_ex.Controllers
         {
             return View();
         }
+
+        public ActionResult PartialViews()
+        {
+            return View();
+        }
+
+        public ActionResult PartialPagesIllustration()
+        {
+            return View();
+        }
     }
 }

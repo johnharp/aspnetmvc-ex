@@ -1,0 +1,16 @@
+﻿@using ASPNETMVC_ex.Models
+
+@Html.Partial("_Message", new MessageViewModel
+{
+    Title = "Warning",
+    Message = "The supplied machine ID is not valid.  Please check " +
+        "the value and re-submit.",
+    CssClass = "bg-danger text-light"
+})
+
+@Html.Partial("_Message", new MessageViewModel
+{
+    Title = "Success",
+    Message = "All records have been upgraded successfully.",
+    CssClass = "bg-success text-light"
+})

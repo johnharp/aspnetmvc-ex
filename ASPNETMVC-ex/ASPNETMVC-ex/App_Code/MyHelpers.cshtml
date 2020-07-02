@@ -4,7 +4,7 @@
     string title, string description,
     string buttonCssClass, string iconCssClass,
     string action,
-    UrlHelper Url)
+    UrlHelper Url) // Notice that UrlHelper is passed from the caller
 {
     <a href='@Url.Action(action)'
        class="buttonex @buttonCssClass">
